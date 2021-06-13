@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Crypto Market Bubble Chart</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://d3js.org/d3.v5.js"></script>
+  </head>
+  <body>
+    <h1>Cryptocurrencies Market Capitalization</h1>
+    <h3>June 4 2021</h3>
+    <div class="warning">
+      <div><b>Category</b></div>
+      <input type="radio" name="peas" id="cap" onclick="updateData('market_cap')">
+      <label  style="display: inline-block; margin: 5px 10px 3px 0; font-size: 0.85em; font-family: BloombergBold" for="cap">Market Capitalization</label>
+      <input type="radio" name="peas" id="volume" onclick="updateData('volume_24h')">
+      <label  style="display: inline-block; margin: 5px 10px 3px 0; font-size: 0.85em;" for="volume">Volume</label>
+      <input type="radio" name="peas" id="price" onclick="updateData('price')">
+      <label  style="display: inline-block; margin: 5px 10px 3px 0; font-size: 0.85em;" for="price">Price</label>
+      <input type="radio" name="peas" id="price" onclick="updateData('circulating_supply')">
+      <label  style="display: inline-block; margin: 5px 10px 3px 0; font-size: 0.85em;" for="price">Circulating Supply</label>        
+    </div> 
+    <div id="graph"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
